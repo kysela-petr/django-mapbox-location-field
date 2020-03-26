@@ -42,7 +42,7 @@ class MapInput(TextInput):
             "placeholder": self.placeholder
         }
         attrs.update(must_be_attrs)
-        attrs["class"] = attrs.get("class", "") + " js-mapbox-input-location-field"
+        attrs["class"] = attrs.get("class", "") + " js-mapbox-input-location-field vTextField"
 
         contex = super().get_context(name, value, attrs)
         self.center_point = contex["widget"].get("value", False)
