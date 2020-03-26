@@ -22,7 +22,7 @@ class MapInput(TextInput):
             map_attrs = {}
         self.map_attrs = map_attrs
         self.readonly = self.map_attrs.pop("readonly", True)
-        self.placeholder = self.map_attrs.pop("placeholder", "Pick a location on map below")
+        self.placeholder = self.map_attrs.pop("placeholder", "Vyberte místo")
         self.center_point = False
 
         super().__init__(attrs)
@@ -60,7 +60,7 @@ class MapInput(TextInput):
         default_map_attrs = {
             "style": "mapbox://styles/mapbox/outdoors-v11",
             "zoom": 13,
-            "center": [17.031645, 51.106715],
+            "center": [50.670636344554225, 15.733204407818135],
             "cursor_style": 'pointer',
             "marker_color": "red",
             "rotate": False,
