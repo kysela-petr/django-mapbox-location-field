@@ -21,7 +21,7 @@ class MapInput(TextInput):
         if map_attrs is None:
             map_attrs = {}
         self.map_attrs = map_attrs
-        self.readonly = self.map_attrs.pop("readonly", True)
+        self.readonly = self.map_attrs.pop("readonly", False)
         self.placeholder = self.map_attrs.pop("placeholder", "Vyberte místo")
         self.center_point = False
 
