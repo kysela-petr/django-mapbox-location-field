@@ -59,8 +59,8 @@ class MapInput(TextInput):
         """renders javascript configuration variables definitions"""
         default_map_attrs = {
             "style": "mapbox://styles/mapbox/outdoors-v11",
-            "zoom": 13,
-            "center": [50.670636344554225, 15.733204407818135],
+            "zoom": 10,
+            "center": [15.733204407818135, 50.670636344554225],
             "cursor_style": 'pointer',
             "marker_color": "red",
             "rotate": False,
