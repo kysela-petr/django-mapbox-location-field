@@ -2,8 +2,10 @@
     top: 0;
     bottom: 0;
     width: 100%;
+    max-width: 700px;
     overflow: hidden;
-    height: 350px;
+    height: 450px;
+    margin: 10px 0;
 
 }
 
