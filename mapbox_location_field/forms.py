@@ -48,6 +48,8 @@ class LocationField(forms.CharField):
         self.error_messages = {"required": "Please pick a location, it's required", }
 
     def to_python(self, value):
+        if not value:
+            return None
         return super().to_python(reverse_tuple_string(value))
 
 
